@@ -31,7 +31,7 @@ def call_history(method: Callable) -> Callable:
     return wrapper
 
 
-def replay(method: Callable) -> Callable:
+def replay(method: Callable) -> None:
     """It replays the call history of a method"""
     catch_instance = method.__self__
     meth_name = method.__qualname__
