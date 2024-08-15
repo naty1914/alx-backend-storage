@@ -47,6 +47,7 @@ def replay(method: Callable) -> None:
 
 
 class Cache:
+    """A class that implements a caching system"""
     def __init__(self):
         """It initializes the class"""
         self._redis = redis.Redis()
